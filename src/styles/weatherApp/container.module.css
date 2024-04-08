@@ -1,0 +1,109 @@
+.containerMain {
+  /* background: linear-gradient(185deg, rgba(230,147,39,1) 3%, rgba(73,72,109,1) 35%, rgba(1,1,1,1) 100%); */
+  /* background-color: #000a18; */
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.containerApp {
+  height: 80%;
+  width: 300px;
+  /* background-color: #000a18; */
+  background: linear-gradient(
+    185deg,
+    rgba(230, 147, 39, 1) 3%,
+    rgba(73, 72, 109, 1) 35%,
+    rgba(1, 1, 1, 1) 100%
+  );
+  border-radius: 48px;
+  padding: 8px;
+  display: grid;
+  grid-template-rows: 1fr 100px;
+}
+.tempInfo {
+  color: white;
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 8px;
+}
+.tempInfo img {
+  width: 100%;
+  height: 250px;
+  object-fit: contain;
+}
+.tempInfo div {
+  padding: 16px;
+}
+.temperature {
+  font-size: 5rem;
+  font-weight: bold;
+  margin: 0px;
+}
+.weather {
+  font-size: 1.15rem;
+  font-weight: 500;
+  margin: 0px;
+}
+
+.containerAppInnerLower {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+  padding: 16px;
+  margin-top: -15px;
+}
+.searchBar {
+  padding: 16px;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 8px;
+}
+.searchBar input {
+  border-radius: 32px;
+  border: none;
+  height: 32px;
+  padding: 0px 16px;
+}
+.searchBar button {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: none;
+  background-color: #ffb74d;
+}
+.searchBar button:hover {
+  background-color: white;
+}
+.extraInfo {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 16px;
+  margin-top: -40px;
+}
+.extraInfo div {
+  text-align: center;
+  font-size: 0.8rem;
+  color: white;
+}
+.extraInfo div p {
+  margin: 0px;
+}
+.viewMoreBtnContainer {
+}
+.viewMoreBtn {
+  background-color: transparent;
+  color: white;
+  border: none;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -20px;
+}
+.viewMoreBtn:hover {
+  background-color: transparent;
+  text-decoration: underline;
+}
